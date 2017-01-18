@@ -15,17 +15,6 @@
 				<h1>Products</h1>
 			</div>
 		</div>
-		<div class="pull-right" style="padding-right: 50px">
-			<a
-				href="<spring:url value= "/products/product?id=${product.productId}&language=en" />"
-				class="btn btn-primary"> <span
-				class="glyphicon-info-sign glyphicon" /></span> English
-			</a> <a
-				href="<spring:url value= "/products/product?id=${product.productId}&language=nl" />"
-				class="btn btn-primary"> <span
-				class="glyphicon-info-sign glyphicon" /></span> Dutch
-			</a>
-		</div>
 	</section>
 	<section class="container">
 		<div class="row">
@@ -38,32 +27,28 @@
 				<h3>${product.name }</h3>
 				<p>${product.description }</p>
 				<p>
-					<strong><spring:message code="product.form.itemCode.label" /></strong>
-					: ${product.productID}
+					<strong>Item Code</strong>
+					: ${product.productId}
 				</p>
 				<p>
-					<strong><spring:message
-							code="product.form.manufacturer.label" /></strong> :
+					<strong>Manufacturer</strong> :
 					${product.manufacturer }
 				</p>
 				<p>
-					<strong><spring:message code="product.form.category.label" /></strong>
+					<strong>Category</strong>
 					: ${product.category }
 				</p>
 				<p>
-					<strong><spring:message
-							code="product.form.unitsInStock.label" /></strong> :
+					<strong>Units In Stock</strong> :
 					${product.unitsInStock }
 				</p>
 				<h4>${product.unitPrice }USD</h4>
 				<a href="<spring:url value="/products" />" class="btn btn-default">
-					<span class="glyphicon-hand-left glyphicon"></span> <spring:message
-						code="product.form.back.label" />
+					<span class="glyphicon-hand-left glyphicon"></span> Back
 				</a>
 				<p>
 					<a href="#" class="btn btn-warning btn-large"> <span
-						class="glyphicon-shopping-cart glyphicon"></span> <spring:message
-							code="product.form.orderNow.label" />
+						class="glyphicon-shopping-cart glyphicon"></span> Order Now
 					</a>
 				</p>
 			</div>
