@@ -85,7 +85,7 @@ public class ProductController {
 
 	@RequestMapping(value = "/product", method = RequestMethod.GET)
 	public String getProductById(@RequestParam("id") String productId, Model model) {
-		
+
 		model.addAttribute("product", productService.getProductById(productId));
 
 		return "product";
@@ -170,6 +170,11 @@ public class ProductController {
 		productService.addProduct(newProduct);
 
 		return "redirect:/products";
+	}
+
+	@RequestMapping("/invalidPromoCode")
+	public String invalidPromoCode() {
+		return "invalidPromoCode";
 	}
 
 	@ExceptionHandler(ProductNotFoundException.class)
