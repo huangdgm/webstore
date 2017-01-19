@@ -68,7 +68,4 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
 		<property name="defaultLocale" value="en" />
 	</bean>
-	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-    <property name="basename" value="WEB-INF/views/product" />
-</bean>
 </beans>
