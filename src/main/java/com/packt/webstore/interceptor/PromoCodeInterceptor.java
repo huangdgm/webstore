@@ -19,6 +19,7 @@ public class PromoCodeInterceptor extends HandlerInterceptorAdapter {
 			} else {
 				response.sendRedirect(errorRedirect);
 			}
+			
 			return false;
 		}
 		return true;
