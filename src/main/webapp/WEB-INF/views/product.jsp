@@ -39,7 +39,7 @@
 				<p>${product.description }</p>
 				<p>
 					<strong><spring:message code="product.form.itemCode.label" /></strong>
-					: ${product.productID}
+					: ${product.productId}
 				</p>
 				<p>
 					<strong><spring:message
